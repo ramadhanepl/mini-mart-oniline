@@ -1,16 +1,15 @@
-// next.config.mjs (Edit file ini yang sudah ada)
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'via.placeholder.com',
+        hostname: 'fakestoreapi.com',
         port: '',
-        pathname: '/**',
+        pathname: '/img/**', // Izinkan semua gambar dari folder /img
       },
     ],
   },
 };
 
-export default nextConfig; // <-- Perubahan di sini dari module.exports menjadi export default
+export default nextConfig;
