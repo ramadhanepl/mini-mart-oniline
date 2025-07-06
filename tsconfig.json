@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".", // Pastikan ini ada dan bernilai "."
+    "paths": {
+      "@/app/*": ["./app/*"], // Alias untuk folder app/
+      "@/components/*": ["./app/components/*"], // Alias khusus untuk komponen
+      "@/types/*": ["./app/types/*"], // Alias khusus untuk types
+      "@/context/*": ["./app/context/*"], // Alias khusus untuk context
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
